@@ -1,0 +1,28 @@
+td {
+    padding-bottom: 10px;
+}
+
+
+.textfield {
+    height: 30;
+    width: 150;
+}
+
+.button{
+    background-color: rgb(47, 177, 252);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+#page {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    width: 500;
+    padding: 10px;
+    border-radius: 1em;
+    border: 1px solid gray;
+}

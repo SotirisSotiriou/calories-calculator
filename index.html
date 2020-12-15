@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action="">
+        <div id="page">
+            <table align="center">
+                <!-- row 1 -->
+                <tr>
+                    <td colspan="3" align="center"><h3>Calories Calculator</h3></td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                    <td><p>Age: </p></td>
+                    <td><input type="text" id="age" class="textfield"></td>
+                    <td> years</td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                    <td><p>Gender: </p></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <span>Male  </span>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <span>Female  </span>
+                    </td>
+                    <td></td>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                    <td><p>Height: </p></td>
+                    <td><input type="text" id="height" class="textfield"></td>
+                    <td></td>
+                </tr>
+                <!-- row 5 -->
+                <tr>
+                    <td><p>Weight: </p></td>
+                    <td><input type="text" id="weight" class="textfield"></td>
+                    <td> Kg</td>
+                </tr>
+                <!-- row 6 -->
+                <tr>
+                    <td><p>Activeness: </p></td>
+                    <td>
+                        <select name="activeness" id="activeness">
+                            <option value="0">Sedentary</option>
+                            <option value="200">Light Active</option>
+                            <option value="500">Moderately Active</option>
+                            <option value="800">Very Active</option>
+                            <option value="1200">Extra Active</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input class="button" type="button" value="Calculate The Calories" onclick="calculateCalories()">
+            <br/>
+            <h3>Calories Result</h3>
+            <p><span>Calories Needed: </span> <input type="text" id="caloriesNeeded" class="textfield" value=""></p>
+        </div>
+    </form>
+</body>
+</html>
